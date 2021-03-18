@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: linen;
+}
+
+h1 {
+  color: maroon;
+  margin-left: 40px;
+}
+h3 {
+	border-left: 10px groove;
+  color: maroon;
+  margin-left: 40px;
+}
+p {
+color: maroon;
+ margin-left: 40px;
+}
+input {
+border-style: groove;
+color: maroon;
+background-color: lightgrey;
+margin-left: 40px;
+}
+</style>
+<script>
+function lol() { 
+var nome = form1.campo1.value; 
+var rep_email = form1.campo5.value;
+var email = form1.campo2.value;
+var senha = form1.campo3.value;
+var rep_senha = form1.campo4.value;
+var check;
+var checkemail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if (form1.campo6.value == "") {
+alert ("Caixa vazia");
+form1.campo6.focus();
+return false;
+}
+if (nome == "") {
+alert ("Caixa vazia");
+form1.campo1.focus();
+return false;
+var check = 5;
+}
+if (email == "") {
+alert ("Caixa vazia");
+form1.campo2.focus();
+return false;
+var check = 5;
+}
+if (senha == "") {
+alert ("Caixa vazia");
+form1.campo3.focus();
+return false;
+var check = 5;
+}
+
+if (senha.length < 8) {
+alert("Mínimo de 8 caracteres");
+form1.campo3.focus();
+return false;
+var check = 5;
+}
+if (senha.length > 10) {
+alert("Máximo de 10 caracteres");
+form1.campo3.focus();
+return false;
+var check = 5;
+}
+if (email.match(checkemail) == null ){
+alert("Não é um endereço de e-mail válido");
+return false;
+var check = 5;
+}
+if (senha.search(/[A-Z]/) < 0) {
+    alert("Password precisa de uma letra maiúscula")
+	var check = 5;
+}
+if (senha.search(/[0-9]/) < 0) {
+    alert("Password precisa de um número")
+	var check = 5;
+    return false;
+}
+if (senha != rep_senha) {
+alert("Password são diferentes");
+form1.rep_senha.value = "";
+form1.campo3.focus();
+return false;
+var check = 5;
+}
+
+if (email != rep_email) {
+alert("Emails são diferentes");
+form1.rep_email.value = "";
+form1.campo2.focus();
+return false;
+var check = 5;
+}
+
+if (check != 5) {
+alert ("Formulário enviado com sucesso");
+}
+
+}
+
+
+</script>
+<title> Teste M6 </title>
+<meta http-equiv="Content-type" content="text/html;charset=utf-8">
+
+</head>
+<body>
+<pre>
+<form name="form1">
+<h1>Teste de programação módulo 6 by Gabriel Lemos</h1> <br>
+<p> Bem vindo ao formulário da revista Forum <br> *Campo obrigatório </p>
+<h3> Digite seu nome* </h3> 
+<input type="text" name="campo1"> <br>
+<h3> Digite seu email* </h3> 
+<input type="email" name="campo2" style="width: 275px"> <br>
+<h3> Repita seu email* </h3> 
+<input type="email" name="campo5" style="width: 275px"> <br>
+<h3> Digite sua senha* </h3> 
+<input type="password" name="campo3"> <br>
+<h3> Repita sua senha* </h3> 
+<input type="password" name="campo4"> <br>
+<h3> Motivo do registro* </h3> 
+<input type="text" name="campo6" style="height:85px"> <br>
+<input type="reset" name="Limpar" value="Reset"> <br>
+<input type="button" name="botao" value="Enter" onClick="lol()"> <br>
+
+
+</form>
+</pre>
+</body>
+</html> 

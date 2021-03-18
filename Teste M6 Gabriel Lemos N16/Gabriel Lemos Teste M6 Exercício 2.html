@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: linen;
+}
+
+h1 {
+  color: maroon;
+  margin-left: 40px;
+}
+h3 {
+	border-left: 10px groove;
+  color: maroon;
+  margin-left: 40px;
+}
+p {
+color: maroon;
+ margin-left: 40px;
+}
+input {
+border-style: groove;
+color: maroon;
+background-color: lightgrey;
+margin-left: 40px;
+}
+</style>
+<script>
+function lol() { 
+var check;
+if (form1.campo1.value == ""){
+alert("Caixa vazia");
+}
+if (form1.campo1.value == "segunda") {
+alert ("domingo, terça");
+var check = 5;
+}
+if (form1.campo1.value == "terça") {
+alert ("segunda, quarta");
+var check = 5;
+}
+if (form1.campo1.value == "quarta") {
+alert ("terça, quinta");
+var check = 5;
+}
+if (form1.campo1.value == "quinta") {
+alert ("quarta, sexta");
+var check = 5;
+}
+if (form1.campo1.value == "sexta") {
+alert ("quinta, sábado");
+var check = 5;
+}
+if (form1.campo1.value == "sábado") {
+alert ("sexta, domingo");
+var check = 5;
+}
+if (form1.campo1.value == "domingo") {
+alert ("sábado, segunda");
+var check = 5;
+}
+if (check != 5) {
+alert ("O nome não foi inserido corretamente")
+}}
+
+
+</script>
+<title>  </title>
+<meta http-equiv="Content-type" content="text/html;charset=utf-8">
+
+</head>
+<body>
+<pre>
+<form name="form1">
+<h1>Teste de programação módulo 6 by Gabriel Lemos</h1> <br>
+<h3>Digite um dia da semana</h3>
+<p> (O dia deverá ser introduzido em letra minúsculas, sem erros de ortografia e sem "-feira". por exemplo: "sábado")</p> 
+<input type="text" name="campo1"> <br>
+<input type="reset" name="Limpar" value="Reset"> <br>
+<input type="button" name="botao" value="Enter" onClick="lol()"> <br>
+
+
+</form>
+</pre>
+</body>
+</html> 
