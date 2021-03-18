@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: linen;
+}
+
+h1 {
+  color: maroon;
+  margin-left: 40px;
+}
+h3 {
+	border-left: 10px groove;
+  color: maroon;
+  margin-left: 40px;
+}
+input {
+border-style: groove;
+color: maroon;
+background-color: lightgrey;
+margin-left: 40px;
+}
+</style>
+<script>
+function lol() { 
+if (form1.campo1.value == ""){
+alert("Caixa vazia");
+}else{
+var valor1 = form1.campo1.value;
+if(isNaN(valor1)){
+alert("Não é um número");
+}else{
+valor1 = parseInt (valor1, 10);
+if (valor1 % 2 == 0) {
+alert ("O número inserido é par");
+}else{
+alert ("O número inserido não é par");
+}}}}
+
+</script>
+<title> Exercício 1 </title>
+<meta http-equiv="Content-type" content="text/html;charset=utf-8">
+
+</head>
+<body>
+<pre>
+<form name="form1">
+<h1>Verificar se o número é par</h1> <br>
+<input type="text" name="campo1"> <br>
+<input type="reset" name="Limpar" value="Reset"> <br>
+<input type="button" name="botao" value="Enter" onClick="lol()"> <br>
+</form>
+</pre>
+</body>
+</html> 

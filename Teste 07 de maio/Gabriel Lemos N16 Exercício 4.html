@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: linen;
+}
+
+h1 {
+  color: maroon;
+  margin-left: 40px;
+}
+h3 {
+	border-left: 10px groove;
+  color: maroon;
+  margin-left: 40px;
+}
+input {
+border-style: groove;
+color: maroon;
+background-color: lightgrey;
+margin-left: 40px;
+}
+</style>
+<script>
+function lol() { 
+if (form1.campo1.value == ""){
+alert("Caixa vazia");
+}else{
+var valor1 = form1.campo1.value;
+if(isNaN(valor1)){
+alert("Não é um número");
+}else{
+valor1 = parseInt (valor1, 10);
+if (valor1 > 150 || valor1 < 1){
+alert ("O valor inserido não é válido");
+} else {
+var f;
+var nump;
+nump = parseInt (valor1, 10);
+var numpr;
+numpr = parseInt (valor1, 10);
+for (f = 0; f < valor1 + 1; f++) {
+if (f % 2 == 0) {
+} else {
+alert ("Impar: " + f);
+nump ++;
+}}
+nump = nump - valor1 - 1;
+alert ("Números pares: " + nump);
+}}}}
+
+
+</script>
+<title> Exercício 4 </title>
+<meta http-equiv="Content-type" content="text/html;charset=utf-8">
+
+</head>
+<body>
+<pre>
+<form name="form1">
+<h1>Números Impares</h1> <br>
+<h3> Digite um número </h3>
+<input type="text" name="campo1">
+<input type="reset" name="Limpar" value="Reset"> <br>
+<input type="button" name="botao" value="Enter" onClick="lol()"> <br>
+
+
+</form>
+</pre>
+</body>
+</html> 

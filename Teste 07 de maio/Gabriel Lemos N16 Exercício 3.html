@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: linen;
+}
+
+h1 {
+  color: maroon;
+  margin-left: 40px;
+}
+h3 {
+	border-left: 10px groove;
+  color: maroon;
+  margin-left: 40px;
+}
+input {
+border-style: groove;
+color: maroon;
+background-color: lightgrey;
+margin-left: 40px;
+}
+</style>
+<script>
+function f() { 
+if (form1.campo1.value == ""){
+alert("Caixa vazia");
+}else{
+var valor1 = form1.campo1.value;
+if(isNaN(valor1)){
+alert("Não é um número");
+}else{
+valor1 = parseInt (valor1, 10);
+var convc = (valor1 - 32) / 1.8;
+alert ("O valor desta conversão resulta " + convc + "º celsius");
+}}}
+function c() { 
+if (form1.campo1.value == ""){
+alert("Caixa vazia");
+}else{
+var valor2 = form1.campo1.value;
+if(isNaN(valor2)){
+alert("Não é um número");
+}else{
+valor2 = parseInt (valor2, 10);
+var convf = valor2 * 1.8 + 32;
+alert ("O valor desta conversão resulta " + convf + "º fahrenheit");
+}}}
+
+</script>
+<title> Exercício 3 </title>
+<meta http-equiv="Content-type" content="text/html;charset=utf-8">
+
+</head>
+<body>
+<pre>
+<form name="form1">
+<h1>Conversão de temperatura</h1> <br>
+<h3> Temperatura </h3>
+<input type="text" name="campo1">
+<input type="reset" name="Limpar" value="Reset"> <br>
+<input type="button" name="botao" value="Fahrenheit -> Celsius" onClick="f ()"> <br>
+<input type="button" name="botao2" value="Celsius -> Fahrenheit" onClick="c ()">
+
+</form>
+</pre>
+</body>
+</html> 

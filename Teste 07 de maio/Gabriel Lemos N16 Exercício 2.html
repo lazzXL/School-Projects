@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: linen;
+}
+
+h1 {
+  color: maroon;
+  margin-left: 40px;
+}
+h3 {
+	border-left: 10px groove;
+  color: maroon;
+  margin-left: 40px;
+}
+input {
+border-style: groove;
+color: maroon;
+background-color: lightgrey;
+margin-left: 40px;
+}
+</style>
+<script>
+function lol() { 
+if (form1.campo2.value=="" || form1.campo1.value == "" || form1.campo3.value == ""){
+alert("Caixa vazia");
+}else{
+var valor1 = form1.campo1.value;
+if(isNaN(valor1)){
+alert("Número 1 não é um número");
+}else{
+valor1 = parseInt (valor1, 10);
+var valor2 = form1.campo2.value;
+if(isNaN(valor2)){
+alert("Número 2 não é um número");
+}else{
+valor2 = parseInt (valor2, 10);
+var valor3 = form1.campo3.value;
+if(isNaN(valor3)){
+alert("Número 3 não é um número");
+}else{
+valor3 = parseInt (valor3, 10);
+var valorm = valor1;
+if (valor2>valor1){
+valorm = valor2 
+}
+if (valor3>valorm){
+valorm = valor3 
+}
+var valormn = valor1;
+if (valor2<valor1){
+valormn = valor2 
+}
+if (valor3<valormn){
+valormn = valor3 
+}
+var valormax = valor1 + valor2 + valor3;
+alert ("O maior valor é " + valorm); 
+alert ("O menor valor é " + valormn); 
+alert ("A soma de todos os valores é " + valormax);
+}}}}}
+
+</script>
+<title> Exercício 2 </title>
+<meta http-equiv="Content-type" content="text/html;charset=utf-8">
+
+</head>
+<body>
+<pre>
+<form name="form1">
+<h1>Insira 3 números para somar todos e ver qual é o maior</h1> <br>
+<h3> Número 1 </h3>
+<input type="text" name="campo1">
+<h3> Número 2 </h3>
+<input type="text" name="campo2">
+<h3> Número 3 </h3>
+<input type="text" name="campo3"> <br>
+<input type="reset" name="Limpar" value="Reset"> <br>
+<input type="button" name="botao" value="Enter" onClick="lol()"> <br>
+</form>
+</pre>
+</body>
+</html> 
