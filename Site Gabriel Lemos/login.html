@@ -1,0 +1,89 @@
+<html>
+	<head>
+		<title>Music and Coffee</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/maincss.css">
+		<script>
+function lol() { 
+var email = form1.campo2.value;
+var senha = form1.campo3.value;
+var checemail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if (email == "") {
+alert ("Caixa vazia");
+form1.campo2.focus();
+return false;
+var check = 5;
+}
+if (senha == "") {
+alert ("Caixa vazia");
+form1.campo3.focus();
+return false;
+var check = 5;
+}
+if (email.match(checemail) == null ){
+alert("Não é um endereço de e-mail válido");
+return false;
+var check = 5;
+}
+if (check != 5) {
+alert ("Login efetuado com sucesso!");
+}
+
+}
+
+
+</script>
+	</head>
+	
+	<body>
+		
+		<header class="banner">
+			<h1>Music and Coffee</h1>
+			
+		</header>
+		
+		<nav>
+			<ul>
+				<li id='pgs'><a href="index.html">Início</a></li>
+				<li id='pgs'><a href="albuns.html">Melhores albuns recentes</a></li>
+				<li id='pgs'><a href="registro.html">Registre-se</a></li>
+				<li id='pgs'><a href="login.html">Log-in</a></li>
+				<li id='pgs'><a href="info.html">Mais informações</a></li>
+			</ul>
+		</nav>
+		
+		<main>
+		
+			<section>
+				<h2>Login</h2>
+				
+					
+				
+				<article>
+					<header>
+						<h3 style='border-left: 6px solid white;'>Faça seu login</h3>
+					</header>
+					<form name="form1"> <br>
+<h3> Digite seu email* </h3> <br>
+<input type="email" name="campo2" style="width: 275px"> <br> <br>
+<h3> Digite sua senha* </h3> <br>
+<input type="password" name="campo3"> <br> <br>
+<input type="reset" name="Limpar" value="Reset"> <br> <br>
+<input type="button" name="botao" value="Enter" onClick="lol()"> <br>
+				</article>
+				<arcticle>
+				<h2> Não tem uma conta? Faça uma agora!: </h2> <br>
+				<a href="registro.html" id='gnd'>Registre-se</a></li>
+				</arcticle>
+				
+				
+			</section>
+			
+		</main>
+		<footer>
+			<p>By: Gabriel Lemos <br> Optimizado para o Google Chrome</p>
+		</footer>
+		
+		
+	</body>
+</html>

@@ -1,0 +1,116 @@
+<html>
+	<head>
+		<title>Music and Coffee</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/maincss.css">
+		<script>
+function lol() { 
+var nome = form1.campo1.value; 
+var email = form1.campo2.value;
+var senha = form1.campo3.value;
+var rep_senha = form1.campo4.value;
+var check;
+var checemail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if (nome == "") {
+alert ("Caixa vazia");
+form1.campo1.focus();
+return false;
+var check = 5;
+}
+if (email == "") {
+alert ("Caixa vazia");
+form1.campo2.focus();
+return false;
+var check = 5;
+}
+if (senha == "") {
+alert ("Caixa vazia");
+form1.campo3.focus();
+return false;
+var check = 5;
+}
+if (nome.length < 5) {
+alert("Mínimo de 5 caracteres");
+form1.nome.focus();
+return false;
+var check = 5;
+}
+if (email.match(checemail) == null ){
+alert("Não é um endereço de e-mail válido");
+return false;
+var check = 5;
+}
+if (senha != rep_senha) {
+alert("Password são diferentes");
+form1.rep_senha.value = "";
+form1.campo3.focus();
+return false;
+var check = 5;
+}
+if (check != 5) {
+alert ("Registro efetuado com sucesso!");
+}
+
+}
+
+
+</script>
+	</head>
+	
+	<body>
+		
+		<header class="banner">
+			<h1>Music and Coffee</h1>
+			
+		</header>
+		
+		<nav>
+			<ul>
+				<li id='pgs'><a href="index.html">Início</a></li>
+				<li id='pgs'><a href="albuns.html">Melhores albuns recentes</a></li>
+				<li id='pgs'><a href="registro.html">Registre-se</a></li>
+				<li id='pgs'><a href="login.html">Log-in</a></li>
+				<li id='pgs'><a href="info.html">Mais informações</a></li>
+			</ul>
+		</nav>
+		
+		<main>
+		
+			<section>
+				<h2>Registre-se</h2>
+				
+				<article>
+					<header>
+						<h3 style='border-left: 6px solid white;'>Crie seu registro</h3> <br>
+					</header>
+					<h3> Digite seu nome* </h3> <br>
+					<form name='form1'>
+<input type="text" name="campo1"> <br> <br>
+<h3> Digite seu email* </h3> <br>
+<input type="email" name="campo2" style="width: 275px"> <br> <br>
+<h3> Repita seu email* </h3> <br>
+<input type="email" name="campo5" style="width: 275px"> <br> <br>
+<h3> Digite sua senha* </h3> <br>
+<input type="password" name="campo3"> <br> <br>
+<h3> Repita sua senha* </h3> <br>
+<input type="password" name="campo4"> <br> <br>
+<input type="reset" name="Limpar" value="Reset"> <br> <br>
+<input type="button" name="botao" value="Enter" onClick="lol()"> <br> <br>
+</form>
+
+				<arcticle>
+				<h2> Já tem uma conta? Faça seu login!: </h2> <br>
+				<a href="login.html" id='gnd'>Login</a></li>
+				</arcticle>
+				
+				
+			</section>
+			
+		</main>
+		<footer>
+			<p>By: Gabriel Lemos <br> Optimizado para o Google Chrome</p>
+		</footer>
+		
+		
+	</body>
+</html>
