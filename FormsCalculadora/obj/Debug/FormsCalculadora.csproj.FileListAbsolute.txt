@@ -1,0 +1,10 @@
+C:\Users\Lenovo\source\repos\FormsCalculadora\bin\Debug\FormsCalculadora.exe.config
+C:\Users\Lenovo\source\repos\FormsCalculadora\bin\Debug\FormsCalculadora.exe
+C:\Users\Lenovo\source\repos\FormsCalculadora\bin\Debug\FormsCalculadora.pdb
+C:\Users\Lenovo\source\repos\FormsCalculadora\obj\Debug\FormsCalculadora.csprojAssemblyReference.cache
+C:\Users\Lenovo\source\repos\FormsCalculadora\obj\Debug\FormsCalculadora.Form1.resources
+C:\Users\Lenovo\source\repos\FormsCalculadora\obj\Debug\FormsCalculadora.Properties.Resources.resources
+C:\Users\Lenovo\source\repos\FormsCalculadora\obj\Debug\FormsCalculadora.csproj.GenerateResource.cache
+C:\Users\Lenovo\source\repos\FormsCalculadora\obj\Debug\FormsCalculadora.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\FormsCalculadora\obj\Debug\FormsCalculadora.exe
+C:\Users\Lenovo\source\repos\FormsCalculadora\obj\Debug\FormsCalculadora.pdb
